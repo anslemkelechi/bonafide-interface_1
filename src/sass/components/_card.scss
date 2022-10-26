@@ -1,0 +1,284 @@
+ //CONVERT CARD//
+ .section-portfolio{
+    .item-1{
+        height: 100%;
+    }
+    & .convert-box {
+            background-color: #051016;
+            padding: 3rem 4rem;
+            height: 50rem;
+            margin: auto 0;
+        }
+    
+        .main-header {
+            margin-bottom: 4rem;
+    
+            & h2 {
+                color: #fff;
+                font-size: 2rem;
+                opacity: .6;
+            }
+        }
+                .sub-header {
+                    color: #fff;
+                    font-size: 2.5rem;
+                }
+                .extra-header-main{
+                    & h3{
+                    color: #fff;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    }
+                   
+                }
+                .extra-header-sub{
+                    & h3{
+                    color: #fff;
+                    font-size: 1.2rem;
+                    opacity: .6;
+                    font-weight: 400;
+                    }
+                   
+                }
+        p {
+            color: #fff;
+            font-size: 1.4rem;
+        }
+ }
+ .form {
+     border: 1px solid #E6E5E8;
+     margin-bottom: 1rem;
+ }
+
+ .crypto-input,
+ .fiat-input {
+     & input {
+         background-color: transparent;
+         border-right: 1px solid #E6E5E8;
+         border-top: none;
+         border-left: none;
+         border-bottom: none;
+         width: 100%;
+         padding: 1rem 1rem;
+         color: #fff;
+
+         &:focus {
+             border-top: none;
+             border-left: none;
+             border-bottom: none;
+             outline: none;
+         }
+     }
+ }
+
+ .crypto-select,
+ .fiat-select {
+     position: relative;
+     color: #fff;
+     font-size: 1.2rem;
+     cursor: pointer;
+
+     & .crypt-content,
+     .fiat-content {
+         position: absolute;
+         background-color: #051016;
+         width: 100%;
+         z-index: 10;
+         transition: all .3s;
+
+         & .crypt-item,
+         .fiat-item {
+             transition: all .3s;
+
+             &:hover {
+                 background-image: linear-gradient(to right, #014051, #01372A);
+                 transition: all .3s;
+             }
+         }
+
+
+         & .crypt-network,
+         .fiat-network {
+             justify-self: flex-start;
+             align-self: center;
+             padding: 1rem 0rem;
+             font-size: 1.4rem;
+         }
+
+         & .crypt-img,
+         .fiat-img {
+             width: 1.7rem;
+             margin: 0 auto;
+             padding: 1rem 0rem;
+
+             & img {
+                 width: 100%;
+             }
+         }
+     }
+ }
+
+ .crypto-icondrop i,
+ .fiat-icondrop i {
+     margin-right: 1rem;
+ }
+
+ .crypto-input,
+ .crypto-name,
+ .crypto-icondrop,
+ .fiat-input,
+ .fiat-name,
+ .fiat-icondrop {
+     align-self: center;
+ }
+
+ .crypto-logo,
+ .fiat-logo {
+     width: 2rem;
+     margin: 0 auto;
+     align-self: center;
+
+     & img {
+         width: 100%;
+     }
+ }
+
+ .space-down {
+     display: inline-block;
+     margin-bottom: 1.5rem;
+ }
+
+ .line-head {
+     align-self: center;
+ }
+
+ .line {
+     height: .1rem;
+     width: 100%;
+     background-color: #fff;
+ }
+
+ .reset-icon {
+     text-align: center;
+     align-self: center;
+
+     & i {
+         color: #fff;
+         font-size: 1.4rem;
+     }
+ }
+
+//PORTFOLIO BOX
+    .portfolio-container {
+         height: 45rem;
+         transition: all .3s;
+         .portfolio{
+            background-color: #051016;
+            padding: 3rem 2rem;
+            height:100%;
+             
+                &-status {
+                    & i {
+                        color: #47A663;
+                        font-weight: 800;
+                    }
+            
+                    & span {
+                        color: #eee;
+                        margin-left: 1rem;
+                    }
+                }
+            
+                &-chart {
+                    background-image: url('/dist/img/chart.png');
+                    background-size: cover;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    height: 60%;
+                }
+            
+                .grid-chart-item {
+                    justify-self: center;
+            
+                    h4 {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                }
+         }
+        
+     }
+
+     //TRANSACTION HISTORY
+     .tran-history,.tran-history_B{
+        margin-top: 3rem;
+        background-color: #051016;
+        padding: 3rem 2rem;
+
+        .side-header h4{
+            color:#fff;
+            opacity: .5;
+        }
+        & &_content{
+            margin-top: 3rem;
+
+            .icon {
+                    display: inline-block;
+                    background-color: #081520;
+                    padding: 1rem 2rem;
+                    height: 4rem;
+                    width: 4rem;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: relative;
+                    & i{
+                        font-size: 1.4rem;
+                        color: #fff;
+                        position: absolute;
+                        top:50%;
+                        left:50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    & img{
+                        width:50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    & span{
+                        color: #fff;
+                        font-size: 2rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            
+                .text {
+                    display: inline-block;
+                    align-self: center;
+
+                    & h4{
+                        color:#fff;
+                        font-weight: 300;
+                        font-size: 1.25rem;
+                    }
+                    & span{
+                        color:#fff;
+                    }
+                    & #fiat-account{
+                        background-color: #47A663;
+                        padding: 1.5rem 3rem;
+                        color:#fff;
+
+                    }
+                      #tran-history_details a {
+                    color: #fff;
+                        }
+                }
+        }
+        
+     }
