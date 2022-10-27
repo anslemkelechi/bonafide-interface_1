@@ -1,0 +1,16 @@
+@media screen and (max-width:1024px){
+    html{
+        font-size: 55.5%;
+    }
+    .tran-history .tran-history_content .text #fiat-account{
+        padding: 1.5rem 2rem;
+    }
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .header .nav-bar .nav-link{
+        display: none;
+    }
+}

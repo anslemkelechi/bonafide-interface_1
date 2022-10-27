@@ -4,5 +4,6 @@ import * as homeView from './view/homeView'
 
 homeView.nav();
 homeView.colorChange();
-homeView.sectionUpdate();
 homeView.loadConfirmation();
+homeView.formFunctions();
+homeView.randomFunc();

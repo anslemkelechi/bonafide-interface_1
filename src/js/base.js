@@ -1,6 +1,9 @@
 export const domElement = {
     body: document.getElementById('body'),
     preloader: document.querySelector('.preloader'),
+    alert: document.querySelector('.alert'),
+    errorMsg: document.getElementById('message'),
+    closeMsg: document.querySelector('.close-msg'),
     dropdownIcon: document.querySelector('.half-gradient'),
     dropdownContent: document.querySelector('.dropdown-content'),
     cryptoImg: document.querySelector('.crypto-img img'),
@@ -36,3 +39,30 @@ export const domElement = {
     loadReceipt: document.querySelector('.load-reciept'),
 }
 
+
+export const formElement = {
+    cryptoValue: document.querySelector('.crypto-value'),
+    cryptoName: document.querySelector('.crypto-name'),
+    fiatValue: document.querySelector('.fiat-value'),
+    fiatName: document.querySelector('.fiat-name'),
+    senderFirstName: document.getElementById('fName'),
+    senderLastName: document.getElementById('lName'),
+    senderEmail: document.getElementById('email'),
+    deliveryMtd: document.getElementById('dMethod'),
+    acctNumber: document.querySelector('.account'),
+    recipentFirstName: document.getElementById('RfName'),
+    recipentLastName: document.getElementById('RlName'),
+    recipentEmail: document.getElementById('Remail'),
+    sendCryptoValue: document.querySelectorAll('.send-crypto-value'),
+    sendFiatValue: document.querySelectorAll('.send-fiat-value'),
+    AmtSent: document.querySelectorAll('.amt-sent'),
+    convertRate: document.querySelectorAll('.convert-rate'),
+    transFee: document.querySelectorAll('.trans-fee'),
+    recieverFN: document.querySelectorAll('.rece-fn'),
+    recieverLN: document.querySelectorAll('.rece-ln'),
+    recieverEmail: document.querySelectorAll('.rece-email'),
+    convertMethod: document.querySelectorAll('.convert-mtd'),
+    convertBank: document.querySelectorAll('.convert-bank'),
+    recieverAcct: document.querySelectorAll('rece-acct')
+
+}

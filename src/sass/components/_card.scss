@@ -282,3 +282,32 @@
         }
         
      }
+
+//Alert Card
+.alert{
+    position: absolute;
+    top:15%;
+    left:0%;
+    height: 15%;
+    width:0%;
+    background-image: linear-gradient(to right, #014051, #01372A);
+    padding: 1rem 3rem;
+    z-index: 30;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+
+    & h3{
+        color:#fff;
+        font-size: 1.4rem;
+    }
+    & span{
+        display: inline-block;
+        color: #fff;
+        background-color:#081520;
+        padding: .6rem 3rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}

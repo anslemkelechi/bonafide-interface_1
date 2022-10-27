@@ -25,6 +25,10 @@
             <img src="./img/loading-2.gif" alt="preloader-image">
         </div>
     </div>
+    <div class="alert">
+        <h3 id="message">Test</h3>
+        <span class="u-margin-top close-msg">Ok</span>
+    </div>
     <header class="header">
         <nav class="grid-of-3 nav-bar">
             <div class="grid-item logo">
@@ -116,7 +120,7 @@
                         <form action="#" class="form">
                             <div class="grid-of-2-small grid-reset-0">
                                 <div class="grid-item-sm crypto-input">
-                                    <input type="text" name="crypto-value">
+                                    <input type="text" name="crypto-value" class="crypto-value">
                                 </div>
                                 <div class="grid-item-sm crypto-select">
                                     <div class="grid-of-3-small grid-reset-1 crypto-drop">
@@ -184,7 +188,7 @@
                         <form action="#" class="form">
                             <div class="grid-of-2-small grid-reset-0">
                                 <div class="grid-item-sm fiat-input">
-                                    <input type="text" name="fiat-value">
+                                    <input type="text" name="fiat-value" class="fiat-value">
                                 </div>
                                 <div class="grid-item-sm fiat-select">
                                     <div class="grid-of-3-small grid-reset-1 fiat-drop">
@@ -566,7 +570,7 @@
                                 </div>
                                 <div class="grid-item sender-detail">
                                     <label for="account">Account Number/Mobile Number</label>
-                                    <input id="account" type="number" name="account">
+                                    <input class="account" type="number" name="account">
                                 </div>
                             </div>
                             <div class="extra-header-main u-margin-top">
@@ -681,7 +685,7 @@
                                             <h3>Account Number</h3>
                                         </div>
                                         <div class="grid-item details-body">
-                                            <h3 id="convert-acct">Recipient to recieve</h3>
+                                            <h3 class="rece-acct">Recipient to recieve</h3>
                                         </div>
                                     </div>
                                     <div class="primary-btn u-margin-top-big">
@@ -719,7 +723,7 @@
                         <h3>You transferred: <span class="send-crypto-value">40Eth</span></h3>
                     </div>
                     <div class="grid-item receipt_details-body">
-                        <h3 id="amt-sent">Conversion Method: <span class="convert-mtd">Bank Account</span></h3>
+                        <h3>Conversion Method: <span class="convert-mtd">Bank Account</span></h3>
                     </div>
                     <div class="grid-item receipt_details-head">
                         <h3>Recepient recieved: <span class="amt-sent">NGN 1,498,975.09</span></h3>
