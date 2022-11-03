@@ -1,1 +1,39 @@
- 
+.hid {
+  display: none;
+}
+.logobox-mob {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mobile-navbtn {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  & i {
+    color: #fff;
+    font-size: 4rem;
+  }
+}
+
+.mobile-nav {
+  height: 100vh;
+  width: 0%;
+  background-color: #080808;
+  position: absolute;
+  top: 8%;
+  z-index: 200;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#body .mobile-active {
+  width: 60%;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s;
+}

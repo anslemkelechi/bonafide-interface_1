@@ -56,4 +56,18 @@
   }
 }
 
-//background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+@media screen and (max-width: 768px) {
+  .landing {
+    & .content {
+      width: 100%;
+      & .logo {
+        width: 28rem;
+      }
+      & .header-text {
+        & h1 {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+}

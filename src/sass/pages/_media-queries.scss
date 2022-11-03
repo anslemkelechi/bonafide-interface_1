@@ -1,16 +1,78 @@
-@media screen and (max-width:1024px){
-    html{
-        font-size: 55.5%;
-    }
-    .tran-history .tran-history_content .text #fiat-account{
-        padding: 1.5rem 2rem;
-    }
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55.5%;
+  }
+  .tran-history .tran-history_content .text #fiat-account {
+    padding: 1.5rem 2rem;
+  }
 }
-@media screen and (max-width:768px){
-    html{
-        font-size: 50%;
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .header .nav-bar .nav-link {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .grid-of-2-main {
+    grid-template-columns: 100%;
+  }
+  .portfolio-container {
+    margin-top: 28rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-hid {
+    display: none;
+  }
+  .header {
+    .mobile-navbtn,
+    .logobox-mob {
+      display: block;
     }
-    .header .nav-bar .nav-link{
-        display: none;
+  }
+  .mob-grid {
+    grid-template-columns: 100%;
+    height: 35%;
+    margin: 5rem auto;
+    & .grid-item {
+      justify-self: flex-start;
+      height: 10%;
     }
+    & .dropdown {
+      height: 100%;
+      & .half-gradient {
+        padding: 1.5rem 3rem;
+      }
+      & .grid-item {
+        height: 100%;
+      }
+    }
+    & .nav-link {
+      ul {
+        li {
+          display: block;
+          & a {
+            display: block;
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+    & .grid-of-2,
+    .grid-of-2-small {
+      grid-template-columns: 100%;
+    }
+  }
+  .section-portfolio {
+    width: 90%;
+  }
+  .grid-mob-4 {
+    grid-template-columns: repeat(2, 50%);
+    margin-bottom: 2rem;
+    & .grid-item-md {
+      justify-self: center;
+    }
+  }
 }
