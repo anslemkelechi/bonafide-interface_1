@@ -1,132 +1,132 @@
- .preloader{
-    z-index: 20;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    background: linear-gradient(to right, #000000cc, #2c3e50);
-    &-img{
+.preloader {
+  z-index: 20;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(to right, #000000cc, #2c3e50);
+  &-img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25%;
-    & img{
-        width:100%;
+    & img {
+      width: 100%;
     }
-    }
-    
- }
- main{
-    margin:5rem 0rem;
-    position: relative;
-    height:100%;
- }
- 
- .tran-confirm, .tran-reciept{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top:0%;
-    left:0%;
-    background: linear-gradient(to right, #000000cc, #2c3e50);
-    z-index: 20;
+  }
+}
+main {
+  margin: 5rem 0rem;
+  position: relative;
+  height: 100%;
+}
 
-    &_content{
+.tran-confirm,
+.tran-reciept {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #000000cc, #2c3e50);
+  z-index: 20;
+
+  &_content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height:80%;
-    width:50%;
+    height: 80%;
+    width: 50%;
     background-color: #051016;
     padding: 2rem 4rem;
     overflow-y: auto;
 
-    #go-back, #go-back2 {
-            text-align: left;
-            cursor:pointer;
-            & i {
-                color: #fff;
-                font-size: 2rem;
-            }
-        }
-    &--header{
-        text-align: center;
-        color:#fff;
-        & h3{
-            font-size: 2rem;
-        }
+    #go-back,
+    #go-back2 {
+      text-align: left;
+      cursor: pointer;
+      & i {
+        color: $primary-text;
+        font-size: 2rem;
+      }
     }
-    .tran-ID{
-        & p{
-            color:#fff;
-            font-size: 1.2rem;
-            opacity: .5;
-        }
+    &--header {
+      text-align: center;
+      color: $primary-text;
+      & h3 {
+        font-size: 2rem;
+      }
     }
-    .send-line{
-        align-self: center;
+    .tran-ID {
+      & p {
+        color: $primary-text;
+        font-size: 1.2rem;
+        opacity: 0.5;
+      }
     }
-    .send-fiat-logo{
-        justify-self: flex-start;
-        align-self: center;
-        width:15%;
-        margin-left: 2rem;
-        & img{
-            width:100%
-        }
+    .send-line {
+      align-self: center;
     }
-    .send-crypto-logo{
-        justify-self: flex-end;
-        align-self: center;
-        width: 15%;
-        
-            & img {
-                width: 100%
-            }
+    .send-fiat-logo {
+      justify-self: flex-start;
+      align-self: center;
+      width: 15%;
+      margin-left: 2rem;
+      & img {
+        width: 100%;
+      }
     }
-    .send-text{
-        text-align: left;
-        margin-bottom: 2rem;
-        & p{
-            font-size: 1.3rem;
-        }
+    .send-crypto-logo {
+      justify-self: flex-end;
+      align-self: center;
+      width: 15%;
+
+      & img {
+        width: 100%;
+      }
+    }
+    .send-text {
+      text-align: left;
+      margin-bottom: 2rem;
+      & p {
+        font-size: 1.3rem;
+      }
     }
 
-        .details-head h3,
-        .details-body h3,
-        .receipt_details-head h3,
-        .receipt_details-body h3 {
-            font-size: 1.25rem;
-            color:#fff;
-            font-weight: 300;
-        }
-    
-        .details-head h3,
-        .receipt_details-body h3,
-        .receipt_details-head h3 {
-            opacity: 1;
-        }
-        .receipt_details-body h3 span,
-        .receipt_details-head h3 span{
-            opacity: 1;
-        }
-
-        .send-more--info{
-            margin-top: 7rem;
-            & h3{
-                color:#fff;
-                font-weight: 300;
-                font-size: 1.4rem;
-            }
-        }
-        .tran-status{
-            display: block;
-            background-color: #19FB9B;
-            padding:1rem 2rem;
-            color:#fff;
-            opacity: 1;
-        }
+    .details-head h3,
+    .details-body h3,
+    .receipt_details-head h3,
+    .receipt_details-body h3 {
+      font-size: 1.25rem;
+      color: $primary-text;
+      font-weight: 300;
     }
-   
- }
+
+    .details-head h3,
+    .receipt_details-body h3,
+    .receipt_details-head h3 {
+      opacity: 1;
+    }
+    .receipt_details-body h3 span,
+    .receipt_details-head h3 span {
+      opacity: 1;
+    }
+
+    .send-more--info {
+      margin-top: 7rem;
+      & h3 {
+        color: $primary-text;
+        font-weight: 300;
+        font-size: 1.4rem;
+      }
+    }
+    .tran-status {
+      display: block;
+      background-color: #19fb9b;
+      padding: 1rem 2rem;
+      color: $primary-text;
+      opacity: 1;
+    }
+  }
+}

@@ -1,57 +1,59 @@
- .send-form{
-    background-color: #051016;
-    padding: 3rem 2rem;
-    height: 150vh;
+.send-form {
+  background-color: #051016;
+  padding: 3rem 2rem;
+  height: 150vh;
 
-    .sender-detail label, .recepient{
-        display: block;
-        color:#fff;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-    }
-    .sender-detail input, select{
-        background-color: transparent;
-        padding:1rem 2rem;
-        border: 1px solid #E6E5E8;
-        color:#fff;
+  .sender-detail label,
+  .recepient {
+    display: block;
+    color: $primary-text;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .sender-detail input,
+  select {
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border: 1px solid $primary-text;
+    color: $primary-text;
 
-        &:focus{
-            outline: none;
-        }
+    &:focus {
+      outline: none;
     }
-    & .recepient{
-        width:95%;
-        margin: 1rem auto;
+  }
+  & .recepient {
+    width: 95%;
+    margin: 1rem auto;
+  }
+  & select {
+    width: 50%;
+    display: block;
+    margin-top: 1rem;
+    & option {
+      background-color: #051016;
+      color: $primary-text;
     }
-    & select{
-        width:50%;
-        display: block;
-        margin-top: 1rem;
-        & option{
-            background-color: #051016;
-            color:#fff;
-        }
-    }
-    .select-ele{
-        width:100%;
-    }
+  }
+  .select-ele {
+    width: 100%;
+  }
 
-    .checkbox {
-        & span {
-        color: #fff;
-        font-size: 1.3rem;
+  .checkbox {
+    & span {
+      color: $primary-text;
+      font-size: 1.3rem;
     }
-    }
-    .submit-form{
-        text-align: center;
+  }
+  .submit-form {
+    text-align: center;
 
-        & span{
-        border: none;
-        color: #fff;
-        background-image: linear-gradient(to bottom right, #014051, #01372A);
-        padding: 1.5rem 6rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        }
+    & span {
+      border: none;
+      color: $primary-text;
+      background-image: linear-gradient(to bottom right, #014051, #01372a);
+      padding: 1.5rem 6rem;
+      font-size: 1.5rem;
+      cursor: pointer;
     }
- }
+  }
+}

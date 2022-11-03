@@ -1,29 +1,31 @@
-
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const devMode = true
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = true;
 
 module.exports = {
-
-  entry: './src/js/index.js',
+  entry: "./src/js/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'js/bundle.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: "js/bundle.js",
   },
   devServer: {
-    static: './dist',
+    static: "./dist",
     hot: true,
-    watchFiles: ['./src/index.html'],
+    watchFiles: ["./src/index.html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/index.html',
+      filename: "index.html",
+      template: "./src/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "dapp.html",
+      template: "./src/dapp.html",
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[id].[hash].css' : 'style.css'
-    })
+      filename: devMode ? "[id].[hash].css" : "style.css",
+    }),
   ],
   module: {
     rules: [
@@ -31,13 +33,17 @@ module.exports = {
         test: /.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.(s*)css$/,
-        use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [
+          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ],
       },
     ],
   },
-}
+};

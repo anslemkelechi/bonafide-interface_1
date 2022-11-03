@@ -1,111 +1,121 @@
-.header{
-    height: 10vh;
-    background-color:$color-primary;
-    position: relative;
+.header {
+  height: 10vh;
+  background-color: $color-primary;
+  position: relative;
 
-    .nav-bar{
-        .logo{
-            align-self: center;
-            .logobox{
-                width:100%;
-                img{
-                    width:100%;
-                }
-            }
+  .nav-bar {
+    .logo {
+      align-self: center;
+      justify-self: flex-end;
+      .logobox {
+        width: 100%;
+        img {
+          width: 100%;
         }
-        .nav-link{
-            justify-self: center;
-            align-self: center;
-            ul{
-                list-style: none;
-                li{
-                    display: inline-block;
-                    &:not(:last-child){
-                        margin-right: 2rem;
-                    }
-                    a{
-                        color:$color-sec;
-                        font-size: 1.4rem;
-                        transition: all .3s;
-                        &:hover{
-                            color:#014051;
-                            transition: all .3s;
-                        }
-                    }
-                }
-            }
-        }
-        .header-btn{
-            justify-self: center;
-            align-self: center;
-            color:#fff;
-            cursor: pointer;
-            
-            & .crypto-img{
-                width:1.7rem;
-                margin: 0 auto;
-                align-self: center;
-                img{
-                    width:100%;
-                }
-            }
-            & .crypto-network, .crypto-icon, .crypto-dropdown--icon{
-                align-self: center;
-                font-size:1.2rem;
-            }
-           
-            & .crypto-dropdown--icon{
-                justify-self: flex-end;
-            }
-           
-            & .half-gradient{
-                background-color: #081520;
-                border: 1px solid #E6E5E8;
-                padding: .4rem 3rem;
-            }
-            & .dropdown{
-                position: relative;
-            }
-            & .dropdown-content{
-            position: absolute;
-            background-color: #051016;
-            width:100%;
-            transition: all .3s;
-
-              & .dropdown-item{
-                transition: all .3s;
-                &:hover{
-                    background-image: linear-gradient(to right, $color-gradient-a, $color-gradient-b);
-                    transition: all .3s;
-                }
-              }
-                 
-
-                & .dropdown-network {
-                   justify-self: flex-start;
-                   align-self: center;
-                    padding: 1rem 0rem;
-                    font-size: 1.4rem;
-                }
-                & .dropdown-img{
-                    width: 1.7rem;
-                    margin: 0 auto;
-                    padding: 1rem 0rem;
-
-                    & img{
-                        width:100%;
-                    }
-                }
-            }
-            & .wallet-info{
-                display: inline-block;
-                padding:1.5rem 1rem;
-                background-image: linear-gradient(to right, $color-gradient-a,$color-gradient-b);
-                justify-self: flex-end;
-                color:#fff;
-                font-size:1.2rem;
-                border: 1px solid #E6E5E8;
-            }
-        }
+      }
     }
-} 
+    .nav-link {
+      justify-self: flex-end;
+      align-self: center;
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+          a {
+            color: $color-sec;
+            font-size: 1.4rem;
+            transition: all 0.3s;
+            &:hover {
+              color: #014051;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+    .header-btn {
+      justify-self: flex-end;
+      align-self: center;
+      color: $primary-text;
+      cursor: pointer;
+
+      & .crypto-img {
+        width: 1.7rem;
+        margin: 0 auto;
+        align-self: center;
+        img {
+          width: 100%;
+        }
+      }
+      & .crypto-network,
+      .crypto-icon,
+      .crypto-dropdown--icon {
+        align-self: center;
+        font-size: 1.2rem;
+      }
+
+      & .crypto-dropdown--icon {
+        justify-self: flex-end;
+      }
+
+      & .half-gradient {
+        background-color: #081520;
+        border: 1px solid #e6e5e8;
+        padding: 0.4rem 3rem;
+      }
+      & .dropdown {
+        position: relative;
+      }
+      & .dropdown-content {
+        position: absolute;
+        background-color: #051016;
+        width: 100%;
+        transition: all 0.3s;
+
+        & .dropdown-item {
+          transition: all 0.3s;
+          &:hover {
+            background-image: linear-gradient(
+              to right,
+              $color-gradient-a,
+              $color-gradient-b
+            );
+            transition: all 0.3s;
+          }
+        }
+
+        & .dropdown-network {
+          justify-self: flex-start;
+          align-self: center;
+          padding: 1rem 0rem;
+          font-size: 1.4rem;
+        }
+        & .dropdown-img {
+          width: 1.7rem;
+          margin: 0 auto;
+          padding: 1rem 0rem;
+
+          & img {
+            width: 100%;
+          }
+        }
+      }
+      & .wallet-info {
+        display: inline-block;
+        padding: 1.5rem 1rem;
+        background-image: linear-gradient(
+          to right,
+          $color-gradient-a,
+          $color-gradient-b
+        );
+        justify-self: flex-end;
+        color: $primary-text;
+        font-size: 1.2rem;
+        border: 1px solid #e6e5e8;
+      }
+    }
+  }
+}

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Bonafide</title>
+    <meta http-equiv="content-language" content="en" />
+    <meta name="title" content="Save, send and receive digital dollars." />
+    <meta
+      name="description"
+      content="Bonafide is a digital dollar wallet that lets you save, send and receive digital dollars."
+    />
+    <meta
+      name="keywords"
+      content="digital dollar, bonafide, save dollars, receive dollars, digital wallet, dollar wallet, receive dollars,financial services, cross border payments"
+    />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body id="body">
+    <div class="preloader hid-loader">
+      <div class="preloader-img">
+        <img src="./img/loading-2.gif" alt="preloader-image" />
+      </div>
+    </div>
+    <div class="alert">
+      <h3 id="message">Test</h3>
+      <span class="u-margin-top close-msg">Ok</span>
+    </div>
+    <header class="header">
+      <nav class="grid-of-3 nav-bar">
+        <div class="grid-item logo">
+          <div class="logobox">
+            <img src="./img/logo-3.svg" alt="Logo" />
+          </div>
+        </div>
+        <div class="grid-item nav-link">
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Transaction History</a></li>
+          </ul>
+        </div>
+        <div class="grid-item header-btn">
+          <div class="grid-of-2">
+            <div class="grid-item">
+              <div class="grid-of-2-small">
+                <div class="grid-item crypto-network">
+                  <h3>Network:</h3>
+                </div>
+                <div class="grid-item dropdown">
+                  <div class="grid-of-3-small half-gradient">
+                    <div class="grid-item crypto-img">
+                      <img src="./img/crypto/eth.png" alt="eth-logo" />
+                    </div>
+                    <div class="grid-item crypto-icon">Ethereum</div>
+                    <div class="grid-item crypto-dropdown--icon">
+                      <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                  </div>
+                  <div class="dropdown-content hid-nav">
+                    <div class="grid-of-2-mid dropdown-item">
+                      <div class="grid-item dropdown-img">
+                        <img src="./img/crypto/solana.png" alt="solana-png" />
+                      </div>
+                      <div class="grid-item dropdown-network">Solana</div>
+                    </div>
+                    <div class="grid-of-2-mid dropdown-item">
+                      <div class="grid-item dropdown-img">
+                        <img src="./img/crypto/bnb.png" alt="bnb-png" />
+                      </div>
+                      <div class="grid-item dropdown-network">Binance..</div>
+                    </div>
+                    <div class="grid-of-2-mid dropdown-item">
+                      <div class="grid-item dropdown-img">
+                        <img src="./img/crypto/cronos.png" alt="cronos-png" />
+                      </div>
+                      <div class="grid-item dropdown-network">Cronos</div>
+                    </div>
+                    <div class="grid-of-2-mid dropdown-item">
+                      <div class="grid-item dropdown-img">
+                        <img src="./img/crypto/fantom.png" alt="fanthom-png" />
+                      </div>
+                      <div class="grid-item dropdown-network">Fantom</div>
+                    </div>
+                    <div class="grid-of-2-mid dropdown-item">
+                      <div class="grid-item dropdown-img">
+                        <img src="./img/crypto/polygon.png" alt="polygon-png" />
+                      </div>
+                      <div class="grid-item dropdown-network">Polygon</div>
+                    </div>
+                    <div class="grid-of-2-mid dropdown-item">
+                      <div class="grid-item dropdown-img">
+                        <img src="./img/crypto/eth.png" alt="eth-png" />
+                      </div>
+                      <div class="grid-item dropdown-network">Ethereum</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="wallet-info"
+                >0x702B12E83...... <span>😎</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section-portfolio">
+        <div class="grid-of-2-main">
+          <div class="grid-item">
+            <div class="item-1 convert-box">
+              <div class="main-header">
+                <h2>Convert Crypto to Fiat</h2>
+              </div>
+              <p>You are sending</p>
+              <span class="space-down"></span>
+              <form action="#" class="form">
+                <div class="grid-of-2-small grid-reset-0">
+                  <div class="grid-item-sm crypto-input">
+                    <input
+                      type="text"
+                      name="crypto-value"
+                      class="crypto-value"
+                    />
+                  </div>
+                  <div class="grid-item-sm crypto-select">
+                    <div class="grid-of-3-small grid-reset-1 crypto-drop">
+                      <div class="grid-item-sm crypto-logo">
+                        <img src="./img/crypto/eth.png" alt="crypto-logo" />
+                      </div>
+                      <div class="grid-item-sm crypto-name">Eth</div>
+                      <div class="grid-item-sm crypto-icondrop">
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                      </div>
+                    </div>
+                    <div class="crypt-content hid-nav">
+                      <div class="grid-of-2-mid crypt-item">
+                        <div class="grid-item crypt-img">
+                          <img src="./img/crypto/solana.png" alt="solana-png" />
+                        </div>
+                        <div class="grid-item crypt-network">Sol</div>
+                      </div>
+                      <div class="grid-of-2-mid crypt-item">
+                        <div class="grid-item crypt-img">
+                          <img src="./img/crypto/bnb.png" alt="bnb-png" />
+                        </div>
+                        <div class="grid-item crypt-network">BCC</div>
+                      </div>
+                      <div class="grid-of-2-mid crypt-item">
+                        <div class="grid-item crypt-img">
+                          <img src="./img/crypto/cronos.png" alt="cronos-png" />
+                        </div>
+                        <div class="grid-item crypt-network">Cro</div>
+                      </div>
+                      <div class="grid-of-2-mid crypt-item">
+                        <div class="grid-item crypt-img">
+                          <img
+                            src="./img/crypto/fantom.png"
+                            alt="fanthom-png"
+                          />
+                        </div>
+                        <div class="grid-item crypt-network">Fan</div>
+                      </div>
+                      <div class="grid-of-2-mid crypt-item">
+                        <div class="grid-item crypt-img">
+                          <img
+                            src="./img/crypto/polygon.png"
+                            alt="polygon-png"
+                          />
+                        </div>
+                        <div class="grid-item crypt-network">Pol</div>
+                      </div>
+                      <div class="grid-of-2-mid crypt-item">
+                        <div class="grid-item crypt-img">
+                          <img src="./img/crypto/eth.png" alt="eth-png" />
+                        </div>
+                        <div class="grid-item crypt-network">Eth</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <p>
+                Conversion rate <span class="c-value"></span> + &#8358; 10,000
+              </p>
+              <div class="grid-of-3 grid-reset-2">
+                <div class="grid-item line-head">
+                  <div class="line"></div>
+                </div>
+                <div class="grid-item reset-icon">
+                  <i class="fa-solid fa-rotate"></i>
+                </div>
+                <div class="grid-item line-head">
+                  <div class="line"></div>
+                </div>
+              </div>
+              <p>To Fiat</p>
+              <span class="space-down"></span>
+              <form action="#" class="form">
+                <div class="grid-of-2-small grid-reset-0">
+                  <div class="grid-item-sm fiat-input">
+                    <input type="text" name="fiat-value" class="fiat-value" />
+                  </div>
+                  <div class="grid-item-sm fiat-select">
+                    <div class="grid-of-3-small grid-reset-1 fiat-drop">
+                      <div class="grid-item-sm fiat-logo">
+                        <img src="./img/fiat/ngn.png" alt="fiat-logo" />
+                      </div>
+                      <div class="grid-item-sm fiat-name">NGN</div>
+                      <div class="grid-item-sm fiat-icondrop">
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                      </div>
+                    </div>
+                    <div class="fiat-content hid-nav">
+                      <div class="grid-of-2-mid fiat-item">
+                        <div class="grid-item fiat-img">
+                          <img src="./img/fiat/dollar.png" alt="dollar-png" />
+                        </div>
+                        <div class="grid-item fiat-network">USD</div>
+                      </div>
+                      <div class="grid-of-2-mid fiat-item">
+                        <div class="grid-item fiat-img">
+                          <img src="./img/fiat/franc.png" alt="franc-png" />
+                        </div>
+                        <div class="grid-item fiat-network">Franc</div>
+                      </div>
+                      <div class="grid-of-2-mid fiat-item">
+                        <div class="grid-item fiat-img">
+                          <img src="./img/fiat/ngn.png" alt="ngn-png" />
+                        </div>
+                        <div class="grid-item fiat-network">NGN</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div id="pop-form" class="primary-btn">
+                <span>Continue</span>
+              </div>
+            </div>
+            <div
+              class="item-1 convert-box u-margin-top tran-history_B hid-section"
+            >
+              <div class="grid-of-3-small grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/bnb.png" alt="bnb-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65BNB</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="tran-history_details"
+                      ><a href="#">Veiw Details</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid-of-3-small grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/bnb.png" alt="bnb-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65BNB</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="tran-history_details"
+                      ><a href="#">Veiw Details</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid-of-3-small grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/bnb.png" alt="bnb-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65BNB</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="tran-history_details"
+                      ><a href="#">Veiw Details</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid-of-3-small grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/bnb.png" alt="bnb-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65BNB</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="tran-history_details"
+                      ><a href="#">Veiw Details</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item portfolio-container" id="portfolio">
+            <div class="portfolio">
+              <div class="main-header">
+                <h2>Portfolio</h2>
+              </div>
+              <div class="sub-header">
+                <h2 id="portfolio-balance">102.547Eth</h2>
+              </div>
+              <div class="portfolio-status">
+                <i class="fa-solid fa-arrow-up-long"></i
+                ><span>383.4 (28% rise)</span>
+              </div>
+              <div class="portfolio-chart"></div>
+              <div class="grid-of-7">
+                <div class="grid-chart-item">
+                  <h4>6 Mnt</h4>
+                </div>
+                <div class="grid-chart-item">
+                  <h4>3 Mnt</h4>
+                </div>
+                <div class="grid-chart-item">
+                  <h4>1 Mnt</h4>
+                </div>
+                <div class="grid-chart-item">
+                  <h4>3 Wks</h4>
+                </div>
+                <div class="grid-chart-item">
+                  <h4>1 Wks</h4>
+                </div>
+                <div class="grid-chart-item">
+                  <h4>5 Dys</h4>
+                </div>
+                <div class="grid-chart-item">
+                  <h4>1 Dys</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="tran-history">
+              <div class="main-header">
+                <h2>Transaction History</h2>
+              </div>
+              <div class="side-header">
+                <h4 class="tran-date">04 Sept</h4>
+              </div>
+              <div class="grid-of-4 grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/bnb.png" alt="bnb-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65BNB</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="fiat-account">GTB 0717...09</span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-of-4 grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/eth.png" alt="eth-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65Eth</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="fiat-account">GTB 0717...09</span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-of-4 grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/solana.png" alt="solana-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65Sol</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="fiat-account">GTB 0717...09</span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-of-4 grid-reset-4 tran-history_content">
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-action">Converted</h4>
+                      <span id="tran-time">3:48pm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon">
+                      <img src="./img/crypto/fantom.png" alt="Fantom-logo" />
+                    </div>
+                    <div class="text">
+                      <h4 id="tran-value_crypto">35.65Fan</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md">
+                  <div class="grid-of-2-mid grid-reset-3">
+                    <div class="icon u-green"><span>&#8358;</span></div>
+                    <div class="text">
+                      <h4 id="tran-value_fiat">350,872.08</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-md u-align-center">
+                  <div class="text">
+                    <span id="fiat-account">GTB 0717...09</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item send-form hid-section" id="sending">
+            <div class="main-header">
+              <h2>Sender Details</h2>
+            </div>
+            <div class="sender-details">
+              <form action="#" id="form">
+                <div class="grid-of-2">
+                  <div class="grid-item sender-detail">
+                    <label for="fName">First Name</label>
+                    <input id="fName" type="text" name="fName" />
+                  </div>
+                  <div class="grid-item sender-detail">
+                    <label for="lName">Last Name</label>
+                    <input id="lName" type="text" name="lName" />
+                  </div>
+                  <div class="grid-item sender-detail">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" />
+                  </div>
+                </div>
+                <div class="line u-margin-top"></div>
+                <div class="recepient u-margin-top">
+                  <label for="recipient">Select Recepient</label>
+                  <select name="recepient" id="recipient"></select>
+                </div>
+                <div class="extra-header-main u-margin-top-big">
+                  <h3>Recepient Details</h3>
+                </div>
+                <div class="extra-header-sub u-margin-top">
+                  <h3>Conversion Details</h3>
+                </div>
+                <div class="grid-of-2 u-margin-top">
+                  <div class="grid-item sender-detail">
+                    <label for="dMethod">Delivery Method</label>
+                    <select name="dMethod" id="dMethod" class="select-ele">
+                      <option value="Bank Account">Bank Account</option>
+                      <option value="MoMO">MoMO</option>
+                    </select>
+                  </div>
+                  <div class="grid-item sender-detail">
+                    <label for="bankNetwork">Select Bank/Network</label>
+                    <select
+                      name="bankNetwork"
+                      id="bankNetwork"
+                      class="select-ele"
+                    ></select>
+                  </div>
+                  <div class="grid-item sender-detail">
+                    <label for="account">Account Number/Mobile Number</label>
+                    <input class="account" type="number" name="account" />
+                  </div>
+                </div>
+                <div class="extra-header-main u-margin-top">
+                  <div class="grid-of-2">
+                    <div class="grid-item sender-detail">
+                      <label for="RfName">First Name</label>
+                      <input id="RfName" type="text" name="RfName" />
+                    </div>
+                    <div class="grid-item sender-detail">
+                      <label for="RlName">Last Name</label>
+                      <input id="RlName" type="text" name="RlName" />
+                    </div>
+                    <div class="grid-item sender-detail">
+                      <label for="Remail">Email Address</label>
+                      <input id="Remail" type="email" name="Remail" />
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox u-margin-top">
+                  <input type="checkbox" name="save-recepient" />
+                  <span>Save recepient details for future transaction</span>
+                </div>
+                <div class="submit-form u-margin-top">
+                  <span id="load-confirm">Confirm</span>
+                </div>
+                <div class="tran-confirm hid-section">
+                  <div class="tran-confirm_content">
+                    <div id="go-back">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="tran-confirm_content--header">
+                      <h3>Confirm Transaction</h3>
+                      <div class="grid-of-3-small u-margin-top">
+                        <div class="grid-item-sm send-crypto-logo">
+                          <img src="./img/crypto/eth.png" alt="eth-logo" />
+                        </div>
+                        <div class="grid-item-sm send-line">
+                          <img src="./img/arrow.png" alt="arrow" />
+                        </div>
+                        <div class="grid-item-sm send-fiat-logo">
+                          <img src="./img/fiat/ngn.png" alt="ngn-logo" />
+                        </div>
+                      </div>
+                      <div class="send-text u-margin-top">
+                        <p>
+                          You are converting
+                          <span class="send-crypto-value">40Eth</span> for
+                          <span class="send-fiat-value">NGN 1,354,567.09</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="grid-of-2 grid-reset-4 u-margin-top">
+                      <div class="grid-item details-head">
+                        <h3>Recipient to recieve</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="amt-sent">NGN 1,234,567.09</h3>
+                      </div>
+                      <div class="grid-item details-head">
+                        <h3>Conversion Rate</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="convert-rate">1 eth = NGN 250,000</h3>
+                      </div>
+                      <div class="grid-item details-head">
+                        <h3>Transaction Fee</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="trans-fee">0.0086eth</h3>
+                      </div>
+                    </div>
+                    <div class="send-more--info">
+                      <h3>Recipient Details</h3>
+                    </div>
+                    <div class="grid-of-2 grid-reset-4 u-margin-top">
+                      <div class="grid-item details-head">
+                        <h3>First Name:</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="rece-fn">John</h3>
+                      </div>
+                      <div class="grid-item details-head">
+                        <h3>Last Name:</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="rece-ln">Doe</h3>
+                      </div>
+                      <div class="grid-item details-head">
+                        <h3>Email Address:</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="rece-email">Johndoe@gmail.com</h3>
+                      </div>
+                    </div>
+                    <div class="send-more--info">
+                      <h3>Conversion Details</h3>
+                    </div>
+
+                    <div class="grid-of-2 grid-reset-4 u-margin-top">
+                      <div class="grid-item details-head">
+                        <h3>Conversion Method:</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="convert-mtd">Bank Transfer</h3>
+                      </div>
+                      <div class="grid-item details-head">
+                        <h3>Bank Name:</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="convert-bank">New Bank Of Nigeria</h3>
+                      </div>
+                      <div class="grid-item details-head">
+                        <h3>Account Number</h3>
+                      </div>
+                      <div class="grid-item details-body">
+                        <h3 class="rece-acct">Recipient to recieve</h3>
+                      </div>
+                    </div>
+                    <div class="primary-btn u-margin-top-big">
+                      <span class="load-reciept">Confirm</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="tran-reciept hid-section">
+        <div class="tran-reciept_content">
+          <div id="go-back2">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="tran-reciept_content--header">
+            <h3>Transaction Details</h3>
+            <p class="tran-date">13th September 2022</p>
+            <div class="send-text u-margin-top">
+              <p>
+                You converted <span class="send-crypto-value">40Eth</span> to
+                <span class="send-fiat-value">NGN 1,354,567.09</span>
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="tran-ID u-margin-top">
+            <p>Transaction ID : 08653682091</p>
+          </div>
+          <div class="grid-of-2 grid-reset-4 u-margin-top">
+            <div class="grid-item receipt_details-head">
+              <h3>
+                You transferred: <span class="send-crypto-value">40Eth</span>
+              </h3>
+            </div>
+            <div class="grid-item receipt_details-body">
+              <h3>
+                Conversion Method: <span class="convert-mtd">Bank Account</span>
+              </h3>
+            </div>
+            <div class="grid-item receipt_details-head">
+              <h3>
+                Recepient recieved:
+                <span class="amt-sent">NGN 1,498,975.09</span>
+              </h3>
+            </div>
+            <div class="grid-item receipt_details-body">
+              <h3>Recepient name: <span class="rece-fn">John Doe</span></h3>
+            </div>
+            <div class="grid-item receipt_details-head">
+              <h3>
+                Transaction Rate:
+                <span class="convert-rate">1 eth = NGN 250,000</span>
+              </h3>
+            </div>
+            <div class="grid-item receipt_details-body">
+              <h3>
+                Recepient email:
+                <span class="rece-email">Johndoe@gmail.com</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="grid-of-2 grid-reset-4 u-margin-top-large">
+            <div class="grid-item receipt_details-head">
+              <h3>Transaction fee: <span class="trans-fee">0.0086eth</span></h3>
+            </div>
+            <div class="grid-item receipt_details-body">
+              <h3>Bank Name: <span class="convert-bank">GTBank</span></h3>
+            </div>
+            <div class="grid-item receipt_details-head">
+              <h3>
+                Transaction Status:
+                <span class="tran-status"
+                  ><i class="fa-solid fa-circle-check"></i> Successful</span
+                >
+              </h3>
+            </div>
+            <div class="grid-item receipt_details-head">
+              <h3>Account Number: <span class="rece-acct">0105168976</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
