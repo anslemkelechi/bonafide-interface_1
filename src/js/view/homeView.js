@@ -72,10 +72,10 @@ export const nav = () => {
   domElement.dropdownItem.forEach((el) => {
     el.addEventListener("click", (e) => {
       domElement.cryptoImg.forEach((item) => {
-        item.src = el.childNodes[1].childNodes[1].src;
+        item.src = el.children[0].children[0].src;
       });
       domElement.cryptoName.forEach((item) => {
-        item.textContent = el.childNodes[3].textContent;
+        item.textContent = el.children[1].textContent;
       });
       domElement.dropdownContent.forEach((index) => {
         index.classList.toggle("hid-nav");
@@ -93,8 +93,8 @@ export const nav = () => {
   //Event Listerner to update network change from list to nav in convert box.
   domElement.cryptItem.forEach((el) => {
     el.addEventListener("click", (e) => {
-      domElement.cryptImg.src = el.childNodes[1].childNodes[1].src;
-      domElement.cryptName.textContent = el.childNodes[3].textContent;
+      domElement.cryptImg.src = el.children[0].children[0].src;
+      domElement.cryptName.textContent = el.children[1].textContent;
       domElement.convertDropdownContent.classList.toggle("hid-nav");
     });
   });
@@ -106,8 +106,8 @@ export const nav = () => {
   //Event Listerner to update network change from list to nav in convert box.
   domElement.fiatItem.forEach((el) => {
     el.addEventListener("click", (e) => {
-      domElement.fiatImg.src = el.childNodes[1].childNodes[1].src;
-      domElement.fiatName.textContent = el.childNodes[3].textContent;
+      domElement.fiatImg.src = el.children[0].children[0].src;
+      domElement.fiatName.textContent = el.children[1].textContent;
       domElement.fiatdropdownContent.classList.toggle("hid-nav");
     });
   });
