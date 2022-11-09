@@ -20,6 +20,13 @@
   .portfolio-container {
     margin-top: 28rem;
   }
+  .tran-overlay {
+    height: 140%;
+  }
+  .connect-box_content {
+    height: 40%;
+    width: 65%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -48,6 +55,11 @@
       & .grid-item {
         height: 100%;
       }
+      & .crypto-img,
+      .crypto-dropdown--icon,
+      .crypto-icon {
+        width: 10%;
+      }
     }
     & .nav-link {
       ul {
@@ -74,5 +86,9 @@
     & .grid-item-md {
       justify-self: center;
     }
+  }
+  .connect-box_content {
+    height: 40%;
+    width: 85%;
   }
 }

@@ -33,7 +33,10 @@ export const domElement = {
   formBox: document.getElementById("sending"),
   goBackBtn: document.getElementById("go-back"),
   goBackBtn2: document.getElementById("go-back2"),
+  goBackBtn3: document.getElementById("go-back3"),
   loadConfirmation: document.getElementById("load-confirm"),
+  tranHistory: document.querySelector(".tran-history"),
+  tranOverlay: document.querySelector(".tran-overlay"),
   tranConfirmBox: document.querySelector(".tran-confirm"),
   tranReceiptBox: document.querySelector(".tran-reciept"),
   loadReceipt: document.querySelector(".load-reciept"),
@@ -70,4 +73,12 @@ export const mobileNav = {
   open: document.querySelector(".open"),
   close: document.querySelector(".close"),
   mobile_nav: document.querySelector(".mobile-nav"),
+};
+
+export const walletElem = {
+  connectWrapper: document.querySelector(".connect-wrapper"),
+  connectBox: document.querySelector(".connect-box"),
+  connectBtn: document.querySelectorAll(".connect"),
+  metaMask: document.getElementById("metamask"),
+  walletInfo: document.querySelectorAll(".wallet-info"),
 };

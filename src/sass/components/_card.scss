@@ -5,6 +5,7 @@
   .item-1 {
     height: 100%;
   }
+
   & .convert-box {
     background-color: #051016;
     padding: 3rem 4rem;
@@ -171,6 +172,20 @@
 .portfolio-container {
   height: 45rem;
   transition: all 0.3s;
+  position: relative;
+  .connect-wrapper {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 80%),
+      rgb(0 0 0 / 86%)
+    );
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
   .portfolio {
     background-color: #051016;
     padding: 3rem 2rem;

@@ -1,4 +1,5 @@
-import { domElement, formElement, mobileNav } from "../base";
+import { domElement, formElement, mobileNav, walletElem } from "../base";
+import { value } from "../models/walletConn";
 
 const formValueArr = [];
 
@@ -191,4 +192,25 @@ export const startMobileNav = () => {
   //       mobileNav.mobBack.style.transition = "all 0.5s";
   //     }
   //   };
+};
+
+//Restore Webpage to Default start if user is not authenticated
+export const setDefaultUI = (text) => {
+  console.log(text);
+  if (text == "success") {
+    walletElem.connectWrapper.classList.toggle("hid-section");
+    walletElem.connectBox.classList.toggle("hid-section");
+    domElement.tranOverlay.style.visibility = "hidden";
+  }
+};
+
+export const connectWallet = () => {
+  walletElem.connectBtn.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      walletElem.connectBox.classList.toggle("hid-section");
+    });
+  });
+  domElement.goBackBtn3.addEventListener("click", (e) => {
+    walletElem.connectBox.classList.toggle("hid-section");
+  });
 };

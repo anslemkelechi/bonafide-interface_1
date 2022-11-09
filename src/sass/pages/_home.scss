@@ -22,7 +22,8 @@ main {
 }
 
 .tran-confirm,
-.tran-reciept {
+.tran-reciept,
+.connect-box {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -43,12 +44,42 @@ main {
     overflow-y: auto;
 
     #go-back,
-    #go-back2 {
+    #go-back2,
+    #go-back3 {
       text-align: left;
       cursor: pointer;
       & i {
         color: $primary-text;
         font-size: 2rem;
+      }
+    }
+    .sub-header {
+      text-align: center;
+      margin-top: 3rem;
+      p {
+        color: $primary-text;
+        font-size: 1.6rem;
+      }
+      h2 {
+        margin-top: 5rem;
+        font-size: 2rem;
+        color: $primary-text;
+      }
+    }
+    .wallets {
+      margin-top: 9rem;
+      h3 {
+        font-size: 1.4rem;
+        color: $primary-text;
+      }
+    }
+    .connect-logo {
+      align-self: center;
+      text-align: center;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-1rem);
       }
     }
     &--header {
@@ -57,7 +88,11 @@ main {
       & h3 {
         font-size: 2rem;
       }
+      & h2 {
+        font-size: 2.5rem;
+      }
     }
+
     .tran-ID {
       & p {
         color: $primary-text;
@@ -129,4 +164,17 @@ main {
       opacity: 1;
     }
   }
+}
+.connect-box_content {
+  height: 50%;
+  width: 30%;
+}
+.tran-overlay {
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  background-color: #051016;
+  width: 100%;
+  margin-top: 3rem;
+  z-index: 20;
 }

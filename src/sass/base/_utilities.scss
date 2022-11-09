@@ -1,37 +1,40 @@
- .hid-nav{
-    visibility: hidden;
-    opacity: 0;
-    transition: all .3s;
- }
- .hid-section{
-   display: none;
-   visibility: hidden;
-   opacity: 0;
-   transition: all .3s;
- }
- .hid-loader{
-   visibility: hidden;
-   opacity: 0;
-   transition: all .3s;
- }
- .u-align-center{
-   align-self: center !important;
- }
-.u-green{
-   background-color: #01372A !important;
+.hid-nav {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
 }
-.u-margin-top{
-   margin-top: 3rem !important;
+.hid-section {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
 }
-.u-margin-top-big{
-   margin-top: 5rem !important;
+.hid-loader {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
 }
-.u-margin-top-large{
-   margin-top: 10rem !important;
+.u-align-center {
+  align-self: center !important;
 }
-.u-alert{
-   opacity: 1 !important;
-   visibility: visible !important;
-   width: 35% !important;
-   transition: all .8s !important;
+.u-green {
+  background-color: #01372a !important;
+}
+.u-margin-top {
+  margin-top: 3rem !important;
+}
+.u-margin-top-big {
+  margin-top: 5rem !important;
+}
+.u-margin-top-large {
+  margin-top: 10rem !important;
+}
+.u-alert {
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 35% !important;
+  transition: all 0.8s !important;
+}
+.u-reset-btn {
+  height: 100% !important;
 }
