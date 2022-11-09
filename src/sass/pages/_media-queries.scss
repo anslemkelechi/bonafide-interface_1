@@ -27,6 +27,18 @@
     height: 40%;
     width: 65%;
   }
+  .u-pad-left {
+    padding: 1.4rem 7rem !important ;
+  }
+  .u-center {
+    & a {
+      text-align: center;
+    }
+  }
+  .u-alert {
+    width: 85% !important;
+    height: 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -88,7 +100,10 @@
     }
   }
   .connect-box_content {
-    height: 40%;
+    height: 70%;
     width: 85%;
+  }
+  .u-reset-btn2 {
+    width: 60% !important;
   }
 }

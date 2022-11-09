@@ -178,6 +178,12 @@ export const startMobileNav = () => {
     mobileNav.mobile_nav.classList.toggle("mobile-active");
     mobileNav.open.classList.toggle("hid");
     mobileNav.close.classList.toggle("hid");
+
+    walletElem.connectBtn.forEach((el) => {
+      el.addEventListener("click", (e) => {
+        mobileNav.mobile_nav.classList.toggle("mobile-active");
+      });
+    });
   });
 
   //   w    indow.onscroll = () => {
